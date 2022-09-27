@@ -1,5 +1,5 @@
 const { defineConfig } = require('@vue/cli-service')
 module.exports = defineConfig({
   transpileDependencies: true,
-  publicPath: '/yogingliu.github.io/dist/'
+  publicPath: process.env.NODE_ENV === 'development'? '/': '/VueCliPageTest/dist',
 })
